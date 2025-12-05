@@ -9,7 +9,9 @@ import {
   Youtube, Smartphone, User, GraduationCap, Users, 
   Book, Activity, FileText, Award, Library, Star, 
   ClipboardCheck, Info, MessageSquare, Newspaper, 
-  FileCheck, Mail, School, Trophy, Globe
+  FileCheck, Mail, School, Trophy, Globe,
+  MapPin,
+  MessageSquareHeart
 } from 'lucide-react';
 import Image from 'next/image';
 
@@ -45,10 +47,14 @@ const Navbar = () => {
     email: 'info@edigitalindian.com',
     phone: '9934141233',
     social: {
-      facebook: '#',
-      instagram: '#',
-      youtube: '#',
+      facebook: 'https://www.facebook.com/people/E-Digital-INDIA/61574473705318/',
+      instagram: 'https://www.instagram.com/edigitalindia?igsh=MTF0bGwwYzZyaWYxYQ==',
+      youtube: 'https://www.youtube.com/@EDIGITALINDIA',
       whatsapp: 'https://wa.me/918448831264',
+      socialX: 'https://x.com/edigitalindian',
+      pinterest: 'https://in.pinterest.com/edigitaljsr/',
+      map: 'https://www.google.com/maps/dir//2nd+floor,+E-DIGITALINDIA-+Best+Digital+Marketing+Course+in+Jamshedpur,+Jayanta+Tower,+Sakchi+Gol+Chakkar,+opposite+Delhi+Darbar,+SNP+Area,+Sakchi,+Jamshedpur,+Jharkhand+831001,+India/@22.8013493,86.2056833,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x39f5e3d507584243:0x58705df840f5f9d4!2m2!1d86.2030646!2d22.8052486?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D',
+
     }
   };
 
@@ -66,18 +72,21 @@ const Navbar = () => {
       icon: <Info size={18} />,
       type: 'link'
     },
-    { 
-      name: 'Academic', 
-      icon: <GraduationCap size={18} />,
-      type: 'dropdown',
-      items: [
-        { name: 'Digital Library', href: '/academic/library', icon: <BookOpen size={16} /> },
-        { name: 'Academic Calendar', href: '/academic/calendar', icon: <Calendar size={16} /> },
-        { name: 'Time Table', href: '/academic/timetable', icon: <Calendar size={16} /> },
-        { name: 'Holiday List', href: '/academic/holidays', icon: <Calendar size={16} /> },
-        { name: 'Previous Year Questions', href: '/academic/previous-questions', icon: <FileQuestion size={16} /> },
-      ]
-    },
+    // { 
+    //   name: 'Academic', 
+    //   // icon: <GraduationCap size={18} />,
+    //   // type: 'dropdown',
+    //    href: '/', 
+    //   type: 'link'
+
+    //   // items: [
+    //   //   { name: 'Digital Library', href: '/academic/library', icon: <BookOpen size={16} /> },
+    //   //   { name: 'Academic Calendar', href: '/academic/calendar', icon: <Calendar size={16} /> },
+    //   //   { name: 'Time Table', href: '/academic/timetable', icon: <Calendar size={16} /> },
+    //   //   { name: 'Holiday List', href: '/academic/holidays', icon: <Calendar size={16} /> },
+    //   //   { name: 'Previous Year Questions', href: '/academic/previous-questions', icon: <FileQuestion size={16} /> },
+    //   // ]
+    // },
     { 
       name: 'Workshop/Seminar', 
       href: '/workshop', 
@@ -104,76 +113,71 @@ const Navbar = () => {
       icon: <ClipboardCheck size={18} />,
       type: 'link'
     },
-    { 
-      name: 'Students', 
-      href: '/students', 
-      icon: <Users size={18} />,
-      type: 'link'
-    },
-    { 
-      name: 'Blogs', 
-      href: '/Blogs', 
-      icon: <User size={18} />,
-      type: 'link'
-    },
-    { 
-      name: 'NAAC', 
-      href: '/naac', 
-      icon: <Award size={18} />,
-      type: 'link'
-    },
-    { 
-      name: 'IQAC & Cell', 
-      icon: <Star size={18} />,
-      type: 'dropdown',
-      items: [
-        { name: 'IQAC Committee', href: '/iqac/committee', icon: <Users size={16} /> },
-        { name: 'IQAC Activities', href: '/iqac/activities', icon: <Activity size={16} /> },
-        { name: 'Various Cells', href: '/cells', icon: <Globe size={16} /> },
-      ]
-    },
-    { 
-      name: 'Library', 
-      href: '/library', 
-      icon: <Library size={18} />,
-      type: 'link'
-    },
-    { 
-      name: 'Curricular Activities', 
-      href: '/curricular-activities', 
-      icon: <Trophy size={18} />,
-      type: 'link'
-    },
-    { 
-      name: 'Quality Audits', 
-      href: '/quality-audits', 
-      icon: <FileCheck size={18} />,
-      type: 'link'
-    },
-    { 
-      name: 'Information', 
-      href: '/information', 
-      icon: <Info size={18} />,
-      type: 'link'
-    },
-    { 
-      name: 'Feedback', 
-      href: '/feedback', 
-      icon: <MessageSquare size={18} />,
-      type: 'link'
-    },
-    { 
-      name: 'Press Release', 
-      href: '/press-release', 
-      icon: <Newspaper size={18} />,
-      type: 'link'
-    },
-    { 
-      name: 'ISO Certificate', 
-      href: '/iso-certificate', 
-      icon: <FileCheck size={18} />,
-      type: 'link'
-    },
+
+    // { 
+    //   name: 'Blogs', 
+    //   href: '/Blogs', 
+    //   icon: <User size={18} />,
+    //   type: 'link'
+    // },
+    // { 
+    //   name: 'NAAC', 
+    //   href: '/naac', 
+    //   icon: <Award size={18} />,
+    //   type: 'link'
+    // },
+    // { 
+    //   name: 'IQAC & Cell', 
+    //   icon: <Star size={18} />,
+    //   type: 'dropdown',
+    //   items: [
+    //     { name: 'IQAC Committee', href: '/iqac/committee', icon: <Users size={16} /> },
+    //     { name: 'IQAC Activities', href: '/iqac/activities', icon: <Activity size={16} /> },
+    //     { name: 'Various Cells', href: '/cells', icon: <Globe size={16} /> },
+    //   ]
+    // },
+    // { 
+    //   name: 'Library', 
+    //   href: '/library', 
+    //   icon: <Library size={18} />,
+    //   type: 'link'
+    // },
+    // { 
+    //   name: 'Curricular Activities', 
+    //   href: '/curricular-activities', 
+    //   icon: <Trophy size={18} />,
+    //   type: 'link'
+    // },
+    // { 
+    //   name: 'Quality Audits', 
+    //   href: '/quality-audits', 
+    //   icon: <FileCheck size={18} />,
+    //   type: 'link'
+    // },
+    // { 
+    //   name: 'Information', 
+    //   href: '/information', 
+    //   icon: <Info size={18} />,
+    //   type: 'link'
+    // },
+    // { 
+    //   name: 'Feedback', 
+    //   href: '/feedback', 
+    //   icon: <MessageSquare size={18} />,
+    //   type: 'link'
+    // },
+    // { 
+    //   name: 'Press Release', 
+    //   href: '/press-release', 
+    //   icon: <Newspaper size={18} />,
+    //   type: 'link'
+    // },
+    // { 
+    //   name: 'ISO Certificate', 
+    //   href: '/iso-certificate', 
+    //   icon: <FileCheck size={18} />,
+    //   type: 'link'
+    // },
     { 
       name: 'Contact Us', 
       href: '/contact', 
@@ -184,10 +188,10 @@ const Navbar = () => {
 
   // Top quick links for the contact bar
   const topQuickLinks = [
-    { name: 'Digital Library', href: '/academic/library', icon: <BookOpen size={14} /> },
+    // { name: 'Digital Library', href: '/academic/library', icon: <BookOpen size={14} /> },
     { name: 'Gallery', href: '/gallery', icon: <Images size={14} /> },
-    { name: 'Holiday List', href: '/academic/holidays', icon: <Calendar size={14} /> },
-    { name: 'PYQ', href: '/academic/previous-questions', icon: <FileQuestion size={14} /> },
+    // { name: 'Holiday List', href: '/academic/holidays', icon: <Calendar size={14} /> },
+    // { name: 'PYQ', href: '/academic/previous-questions', icon: <FileQuestion size={14} /> },
   ];
 
   // Check if a link is active
@@ -260,6 +264,32 @@ const Navbar = () => {
                   className="hover:text-blue-200 transition"
                 >
                   <Youtube size={18} />
+                </a>
+                 <a 
+                  href={contactInfo.social.pinterest} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-200 transition"
+                >
+               <MessageSquareHeart size={18} />
+                </a>
+                 <a 
+                  href={contactInfo.social.socialX} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-200 transition"
+                >
+                 X {/* <Youtube size={18} /> */}
+                  {/* <X /> */}
+                </a>
+                 <a 
+                  href={contactInfo.social.map} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-200 transition"
+                >
+                  <MapPin size={18} />
+                 
                 </a>
                 <a 
                   href={contactInfo.social.whatsapp} 
@@ -371,7 +401,7 @@ const Navbar = () => {
               
               {/* More dropdown for remaining items */}
               <div className="relative" ref={dropdownRef}>
-                <button
+                {/* <button
                   onClick={() => setOpenDropdown(openDropdown === 'More' ? null : 'More')}
                   className={`flex items-center gap-2 px-3 py-2 rounded-md transition ${
                     openDropdown === 'More'
@@ -387,7 +417,7 @@ const Navbar = () => {
                   <ChevronDown size={16} className={`transition-transform ${
                     openDropdown === 'More' ? 'rotate-180' : ''
                   }`} />
-                </button>
+                </button> */}
                 
                 {openDropdown === 'More' && (
                   <div className="absolute top-full right-0 mt-1 w-56 bg-white shadow-xl rounded-lg py-2 z-50">
