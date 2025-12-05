@@ -43,12 +43,12 @@ const Navbar = () => {
   // Contact information
   const contactInfo = {
     email: 'info@edigitalindian.com',
-    phone: '8797793082',
+    phone: '9934141233',
     social: {
       facebook: '#',
       instagram: '#',
       youtube: '#',
-      whatsapp: 'https://wa.me/918797793082',
+      whatsapp: 'https://wa.me/918448831264',
     }
   };
 
@@ -62,7 +62,7 @@ const Navbar = () => {
     },
     { 
       name: 'About', 
-      href: '/about', 
+      href: '/about-us', 
       icon: <Info size={18} />,
       type: 'link'
     },
@@ -83,7 +83,7 @@ const Navbar = () => {
       href: '/workshop', 
       icon: <Activity size={18} />,
       type: 'link',
-      badge: 'FDP'
+      // badge: 'FDP'
     },
     { 
       name: 'Cources', 
@@ -111,8 +111,8 @@ const Navbar = () => {
       type: 'link'
     },
     { 
-      name: 'Alumni', 
-      href: '/alumni', 
+      name: 'Blogs', 
+      href: '/Blogs', 
       icon: <User size={18} />,
       type: 'link'
     },
@@ -281,8 +281,8 @@ const Navbar = () => {
       </div>
 
       {/* Main Navigation Bar */}
-      <nav className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white shadow-lg' : 'bg-gradient-to-r from-white via-blue-900 to-blue-950'
+      <nav className={`sticky top-0 z-50 transition-all duration-300 h-20 ${
+        scrolled ? 'bg-white shadow-lg' : 'bg-gradient-to-r from-white via-blue-400 to-blue-950'
       }`}>
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-16">
@@ -298,7 +298,7 @@ const Navbar = () => {
                 <img
         src="/logo.png" // Path relative to the public folder
         alt="A description of the image"
-        className='w-40 h-13'
+        className='w-40 h-17 mt-3'
        
       />
               </div>

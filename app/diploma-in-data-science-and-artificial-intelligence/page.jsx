@@ -24,7 +24,7 @@ export default function DataScienceAICoursePage() {
         
         console.log('Form submitted:', formData);
         try {
-            const response = await fetch('/api/enrollments', {
+            const response = await fetch('https://edigitalindian.com/api/register.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

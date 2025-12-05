@@ -67,7 +67,7 @@ export default function HeroWithRegistration() {
 
       const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://edigitalindian.com/api";
       
-      const response = await axios.post(`/api/enrollments`, payload, {
+      const response = await axios.post(`https://edigitalindian.com/api/register.php`, payload, {
         headers: {
           'Content-Type': 'application/json',
         },

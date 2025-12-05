@@ -24,7 +24,7 @@ export default function WebDevelopmentCoursePage() {
         console.log('Form submitted:', formData);
         alert('Thank you for your interest in Web Development Course! We\'ll contact you shortly.');
          try {
-            const response = await fetch('/api/enrollments', {
+            const response = await fetch('https://edigitalindian.com/api/register.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -296,22 +296,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-center md:text-left">
-              <div className="text-gray-400 mb-2">
-                © 2025 E-Digital India | All Rights Reserved
-              </div>
-              <div className="text-sm text-gray-500">
-                Designed & Maintained by{' '}
-                <a 
-                  href="https://globalinfosoft.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-cyan-400 hover:text-cyan-300 transition-colors"
-                >
-                  Global Infosoft
-                </a>
-              </div>
-            </div>
+            
 
             {/* Location Badge */}
             <div className="flex items-center gap-2 px-4 py-2 bg-white/5 rounded-full">

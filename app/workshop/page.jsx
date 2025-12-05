@@ -288,7 +288,7 @@ function WorkshopRegistrationCard() {
 
     try {
       console.log('form',form)
-      const res = await fetch(`/api/enrollments`, {
+      const res = await fetch(`https://edigitalindian.com/api/register.php`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

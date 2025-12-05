@@ -142,7 +142,7 @@ const Carousel = () => {
                 src={slide.image}
                 alt={slide.title}
                 fill
-                className="object-cover"
+                className="w-full"
                 priority={index === 0}
               />
 

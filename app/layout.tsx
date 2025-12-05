@@ -36,7 +36,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Header";
-import Footer from "./components/footer";  
+// import Footer from "./components/footer";  
+import PropagationalDesign from "./components/footer";
 
 
 const inter = Inter({ 
@@ -87,7 +88,7 @@ export default function RootLayout({
             {children}
           </main>
           
-              <Footer/>
+              <PropagationalDesign/>
 
           {/* <footer className="bg-gray-900 text-white py-8">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
